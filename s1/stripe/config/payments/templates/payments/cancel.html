@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оплата отменена</title>
+    <link rel="stylesheet" href="{% static 'payments/styles.css' %}">
+</head>
+<body>
+<main class="container">
+    <section class="card warning">
+        <h1>Оплата отменена</h1>
+        <p>Вы отменили платеж или закрыли окно Stripe Checkout.</p>
+        <a href="{% url 'payments:checkout' %}" class="button-link">Попробовать снова</a>
+    </section>
+</main>
+</body>
+</html>
+
